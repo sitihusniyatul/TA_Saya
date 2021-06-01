@@ -4,7 +4,6 @@
 
 
 function [uo,dps] = of_he(x)
-    global uo
     zdps = [];
     ha = x(1); %helix angle
     bs = x(2); %baffle spacing
@@ -76,4 +75,5 @@ function [uo,dps] = of_he(x)
     end
     
     uo=xx;
+    
 end
