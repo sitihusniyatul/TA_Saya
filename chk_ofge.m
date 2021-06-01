@@ -1,8 +1,8 @@
 %% Check OF_GE
+% ini skrip bukan fungsi
 
 clear;
 clc;
-close all;
 
 zdps = [];
 %ha = x(1); %helix angle
