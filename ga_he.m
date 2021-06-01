@@ -7,7 +7,6 @@ clear;
 clc;
 
 %% Variabel awal
-global uo;
 Dimension = 2; % dimensi diganti sesuai dengan jumlah variabel yang dioptimasi
 UB = [80 210]; % Upper Bounds diganti sesuai dengan constraint fungsi objektif
 LB = [60 190]; % Lower Bounds diganti sesuai dengan constraint fungsi objektif
@@ -53,7 +52,7 @@ for i = 1:size(Individu,1)
     [fitemax,nmax]=max(Datfit);
 end
 
-%% Data Fit selanjutnya
+%% Proses GA nya
 Dadatfit = [];
 for generasi=1:Maxit
     disp('GA processing')
