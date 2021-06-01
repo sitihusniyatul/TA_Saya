@@ -8,8 +8,8 @@ clc;
 
 %% Variabel awal
 Dimension = 2; % dimensi diganti sesuai dengan jumlah variabel yang dioptimasi
-UB = [80 210]; % Upper Bounds diganti sesuai dengan constraint fungsi objektif
-LB = [60 190]; % Lower Bounds diganti sesuai dengan constraint fungsi objektif
+UB = [90 210]; % Upper Bounds diganti sesuai dengan constraint fungsi objektif
+LB = [0 190]; % Lower Bounds diganti sesuai dengan constraint fungsi objektif
 Npop = 500; %populasi
 Maxit = 400; %iterasi
 el = 0.95; %elatism
@@ -163,5 +163,6 @@ for generasi=1:Maxit
     ylabel('Nilai Fungsi Obyektif')
     hold on
     plot(efitnessmax, 'DisplayName', 'efitnessmax', 'YDataSource', 'efitnessmax');
-    hold on
+    hold on    
+    
 end
