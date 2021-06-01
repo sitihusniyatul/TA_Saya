@@ -52,3 +52,5 @@ for i = 1:size(Individu,1)
     Datfit = [Datfit;fitness];
     [fitemax,nmax]=max(Datfit);
 end
+
+%%
